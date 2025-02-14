@@ -1,51 +1,31 @@
-# React + TypeScript + Vite
+MathCanvas: AI-Powered Drawing Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+MathCanvas is an innovative AI-powered calculator that brings your drawings to life! Inspired by the iPad Math Notes/Calculator application, this project allows users to draw mathematical equations, which are then recognized and solved in real-time using the Gemini Flash AI API. Built with Python for the backend and React for the frontend, MathCanvas combines powerful AI with an interactive user interface to provide an intuitive and seamless experience for solving math problems.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#Key Features:
 
-## Expanding the ESLint configuration
+- AI-assisted drawing recognition
+- Real-time math problem solving
+- Interactive, responsive frontend built with React
+- Backend powered by Python and Gemini Flash AI API integration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## To Run the Vite App
 
-- Configure the top-level `parserOptions` property like this:
+1. Clone the repository:
+   ```bash
+   git clone (https://github.com/karthikeyan120602/calc-fe)
+   git clone (https://github.com/karthikeyan120602/calc-be)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+2. Navigate to your project directory:
+   ```bash
+   cd calc-fe
+   
+3.Install the dependencies:
+  ```bash
+    npm install
+  ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-# calc-fe
+4.Run the application:
+  ```bash
+    npm run dev
